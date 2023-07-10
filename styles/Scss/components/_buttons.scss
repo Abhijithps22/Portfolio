@@ -1,0 +1,15 @@
+@use "../abstract//variables" as var;
+@use "../abstract/function" as func;
+
+.header-btn {
+  padding: 0.8rem;
+  color: var.$dribbble;
+  background-color: func.btn-colors();
+  border: none;
+  outline: none;
+
+  &:hover {
+    color: $tumblr;
+    background-color: $dribbble;
+  }
+}

@@ -1,0 +1,11 @@
+@use "../abstract/variables" as var;
+
+.fa-name {
+  color: var.$tumblr;
+}
+
+.header-pro {
+  transition: 400ms;
+  animation: color-changes 10s infinite;
+  cursor: pointer;
+}

@@ -1,0 +1,52 @@
+///////////////////
+// Fonts
+///////////////////
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Libre+Baskerville&family=Merriweather&family=PT+Serif&family=Poppins&family=Sen&family=Tilt+Prism&family=Zilla+Slab:ital,wght@0,400;1,300&display=swap");
+$font-Merriweather: "Merriweather", serif;
+$font-Poppins: "Poppins", sans-serif;
+$font-serif: "PT Serif", serif;
+$font-sen: "Sen", sans-serif;
+$font-Tilt: "Tilt Prism", cursive;
+$font-Zilla: "Zilla Slab", serif;
+
+///////////////////
+// Social Colors
+///////////////////
+$facebook: #3b5998;
+$twitter: #1da1f2;
+$youtube: #ff0000;
+$google-plus: #db4439;
+$linkedin: #007bb6;
+$instagram: #c32aa3;
+$pinterest: #bd081c;
+$google: #4285f4;
+$snapchat: #fffc00;
+$whatsapp: #25d366;
+$tumblr: #35465d;
+$reddit: #ff4500;
+$spotify: #1ed760;
+$yahoo: #430297;
+$dribbble: #ea4c89;
+$skype: #00aff0;
+$quora: #aa2200;
+$riverBed: #4c585c;
+$vimeo: #1ab7ea;
+$blue: #5e72e4;
+$indigo: #6610f2 !default;
+$purple: #7d49eb !default;
+$pink: #e83e8c !default;
+$red: #ee3232;
+$orange: #ff9900 !default;
+$yellow: #fffa6f;
+$green: #297f00;
+$teal: #20c997 !default;
+$cyan: #3065d0;
+///////////////////
+// theme Colors
+///////////////////
+$theme-colors: (
+  "teal": #20c997,
+  "cyan-hover": #3065d0,
+  "blue": #5e72e4,
+  "vimeo": #1ab7ea,
+);

@@ -1,0 +1,16 @@
+@use "../abstract/variables" as *;
+
+@function active-colors($variant: "vimeo") {
+  @return map-get($theme-colors, $variant);
+}
+
+@function hover-colors($variant: "teal") {
+  @return map-get($map: $theme-colors, $key: $variant);
+}
+
+@function pro-colors($teal: #20c997) {
+  @return ($teal);
+}
+@function btn-colors($teal2: #33cb9d) {
+  @return ($teal2);
+}

@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Libre+Baskerville&family=Merriweather&family=PT+Serif&family=Poppins&family=Sen&family=Tilt+Prism&family=Zilla+Slab:ital,wght@0,400;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Libre+Baskerville&family=Merriweather&family=PT+Serif&family=Poppins&family=Sen&family=Tilt+Prism&family=Zilla+Slab:ital,wght@0,400;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Libre+Baskerville&family=Merriweather&family=PT+Serif&family=Poppins&family=Sen&family=Tilt+Prism&family=Zilla+Slab:ital,wght@0,400;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Libre+Baskerville&family=Merriweather&family=PT+Serif&family=Poppins&family=Sen&family=Tilt+Prism&family=Zilla+Slab:ital,wght@0,400;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Libre+Baskerville&family=Merriweather&family=PT+Serif&family=Poppins&family=Sen&family=Tilt+Prism&family=Zilla+Slab:ital,wght@0,400;1,300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.fa-name {
+  color: #35465d;
+}
+
+.header-pro {
+  transition: 400ms;
+  animation: color-changes 10s infinite;
+  cursor: pointer;
+}
+
+@keyframes color-changes {
+  0% {
+    color: #db4439;
+  }
+  25% {
+    color: #4285f4;
+  }
+  50% {
+    color: #25d366;
+  }
+  75% {
+    color: #1ab7ea;
+  }
+  100% {
+    color: #ea4c89;
+  }
+}
+.header-btn {
+  padding: 0.8rem;
+  color: #ea4c89;
+  background-color: #33cb9d;
+  border: none;
+  outline: none;
+}
+.header-btn:hover {
+  color: #35465d;
+  background-color: #ea4c89;
+}
+
+.header {
+  padding: 1rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+}
+.header-title {
+  font-family: "Zilla Slab", serif;
+  font-weight: 400;
+  color: #35465d;
+}
+.header-pro {
+  color: #20c997;
+  margin: 5px;
+  font-size: 0.8em;
+}
+.header-menu {
+  display: flex;
+  list-style-type: none;
+}
+.header-menu-item > a {
+  margin: 1.3rem;
+  text-transform: uppercase;
+  color: #4c585c;
+  font-weight: 600;
+  transition: 300ms;
+}
+.header-menu-item > a.active {
+  color: #1ab7ea;
+}
+.header-menu-item > a:hover {
+  color: #20c997;
+}/*# sourceMappingURL=Main.css.map */

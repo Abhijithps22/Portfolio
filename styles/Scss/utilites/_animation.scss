@@ -1,0 +1,19 @@
+@use "../abstract/variables" as var;
+
+@keyframes color-changes {
+  0% {
+    color: var.$google-plus;
+  }
+  25% {
+    color: var.$google;
+  }
+  50% {
+    color: var.$whatsapp;
+  }
+  75% {
+    color: var.$vimeo;
+  }
+  100% {
+    color: var.$dribbble;
+  }
+}
