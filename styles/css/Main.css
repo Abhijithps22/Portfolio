@@ -6,6 +6,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Libre+Baskerville&family=Merriweather&family=PT+Serif&family=Poppins&family=Sen&family=Tilt+Prism&family=Zilla+Slab:ital,wght@0,400;1,300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Libre+Baskerville&family=Merriweather&family=PT+Serif&family=Poppins&family=Sen&family=Tilt+Prism&family=Zilla+Slab:ital,wght@0,400;1,300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Libre+Baskerville&family=Merriweather&family=PT+Serif&family=Poppins&family=Sen&family=Tilt+Prism&family=Zilla+Slab:ital,wght@0,400;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Libre+Baskerville&family=Merriweather&family=PT+Serif&family=Poppins&family=Sen&family=Tilt+Prism&family=Zilla+Slab:ital,wght@0,400;1,300&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -207,4 +208,33 @@ a {
   border: 2px solid #3065d0;
   border-radius: 5px;
   padding: auto;
+}
+
+.about {
+  background-color: #3065d0;
+}
+.about-head {
+  padding: 3em 3em;
+}
+.about-img {
+  border-radius: 10px;
+  border: 3px solid #3065d0;
+}
+.about-me {
+  color: #1da1f2;
+  font-family: "Poppins", sans-serif;
+  text-align: left;
+  font-size: 2em;
+}
+.about-title {
+  color: black;
+  font-family: "Zilla Slab", serif;
+  font-weight: bold;
+  text-transform: capitalize;
+  word-spacing: wrap;
+  text-align: justify;
+}
+.about-title:hover {
+  color: #ea4c89;
+  cursor: pointer;
 }/*# sourceMappingURL=Main.css.map */
