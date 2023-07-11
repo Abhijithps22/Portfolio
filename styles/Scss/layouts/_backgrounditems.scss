@@ -1,0 +1,38 @@
+@use "../abstract/variables" as var;
+
+.home-animations {
+  position: relative;
+  .code {
+    position: absolute;
+    font-size: 1.6em;
+    color: $skype;
+    right: 25%;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    animation: code ease-in 5s;
+  }
+  .lap {
+    position: absolute;
+    left: 20%;
+    bottom: 8%;
+    font-size: 1.5em;
+    color: $spotify;
+    width: 20px;
+    height: 20px;
+    animation: lap linear 5s;
+  }
+  .heart {
+    position: absolute;
+    left: 46%;
+    z-index: 1;
+    bottom: 45%;
+    position: absolute;
+    font-size: 1.8em;
+    color: $red;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    animation: heart linear 5s infinite;
+  }
+}

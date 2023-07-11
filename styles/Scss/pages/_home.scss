@@ -1,0 +1,31 @@
+@use "../abstract/variables" as var;
+@use "../abstract/function" as func;
+.home {
+  padding: 2rem;
+  margin: auto;
+
+  &-name {
+    text-align: left;
+    color: $cyan;
+    font-family: $font-Poppins;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+  }
+  &-profession {
+    color: func.pro-colors();
+    text-align: left;
+    margin-bottom: 15px;
+  }
+  &-description {
+    color: $dribbble;
+    text-align: justify;
+    font-size: medium;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+  &-img {
+    border: 2px solid $cyan;
+    border-radius: 5px;
+    padding: auto;
+  }
+}

@@ -3,6 +3,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Libre+Baskerville&family=Merriweather&family=PT+Serif&family=Poppins&family=Sen&family=Tilt+Prism&family=Zilla+Slab:ital,wght@0,400;1,300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Libre+Baskerville&family=Merriweather&family=PT+Serif&family=Poppins&family=Sen&family=Tilt+Prism&family=Zilla+Slab:ital,wght@0,400;1,300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Libre+Baskerville&family=Merriweather&family=PT+Serif&family=Poppins&family=Sen&family=Tilt+Prism&family=Zilla+Slab:ital,wght@0,400;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Libre+Baskerville&family=Merriweather&family=PT+Serif&family=Poppins&family=Sen&family=Tilt+Prism&family=Zilla+Slab:ital,wght@0,400;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Libre+Baskerville&family=Merriweather&family=PT+Serif&family=Poppins&family=Sen&family=Tilt+Prism&family=Zilla+Slab:ital,wght@0,400;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Libre+Baskerville&family=Merriweather&family=PT+Serif&family=Poppins&family=Sen&family=Tilt+Prism&family=Zilla+Slab:ital,wght@0,400;1,300&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -19,7 +22,13 @@ a {
 
 .header-pro {
   transition: 400ms;
-  animation: color-changes 10s infinite;
+  animation: color-changes 10s ease;
+  cursor: pointer;
+}
+
+.badge, .badge-title {
+  transition: 300ms;
+  animation: badge-changes 5s linear;
   cursor: pointer;
 }
 
@@ -37,7 +46,45 @@ a {
     color: #1ab7ea;
   }
   100% {
+    color: #4c585c;
+  }
+}
+@keyframes badge-changes {
+  0% {
     color: #ea4c89;
+  }
+  50% {
+    color: #1da1f2;
+  }
+}
+@keyframes code {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    color: #5e72e4;
+  }
+}
+@keyframes heart {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    color: #ea4c89;
+  }
+  100% {
+    transform: rotate(360deg);
+    color: #ff4500;
+  }
+}
+@keyframes lap {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    color: #e83e8c;
   }
 }
 .header-btn {
@@ -50,6 +97,15 @@ a {
 .header-btn:hover {
   color: #35465d;
   background-color: #ea4c89;
+}
+
+.badge, .badge-title {
+  padding: 3px;
+  border-radius: 0.3rem;
+}
+.badge-title {
+  color: #35465d;
+  background-color: #20c997;
 }
 
 .header {
@@ -85,4 +141,70 @@ a {
 }
 .header-menu-item > a:hover {
   color: #20c997;
+}
+
+.home-animations {
+  position: relative;
+}
+.home-animations .code {
+  position: absolute;
+  font-size: 1.6em;
+  color: #00aff0;
+  right: 25%;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  animation: code ease-in 5s;
+}
+.home-animations .lap {
+  position: absolute;
+  left: 20%;
+  bottom: 8%;
+  font-size: 1.5em;
+  color: #1ed760;
+  width: 20px;
+  height: 20px;
+  animation: lap linear 5s;
+}
+.home-animations .heart {
+  position: absolute;
+  left: 46%;
+  z-index: 1;
+  bottom: 45%;
+  position: absolute;
+  font-size: 1.8em;
+  color: #ee3232;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  animation: heart linear 5s infinite;
+}
+
+.home {
+  padding: 2rem;
+  margin: auto;
+}
+.home-name {
+  text-align: left;
+  color: #3065d0;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+.home-profession {
+  color: #20c997;
+  text-align: left;
+  margin-bottom: 15px;
+}
+.home-description {
+  color: #ea4c89;
+  text-align: justify;
+  font-size: medium;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.home-img {
+  border: 2px solid #3065d0;
+  border-radius: 5px;
+  padding: auto;
 }/*# sourceMappingURL=Main.css.map */

@@ -1,0 +1,11 @@
+@use "../abstract/variables" as var;
+.badge {
+  padding: 3px;
+  border-radius: 0.3rem;
+
+  &-title {
+    @extend .badge;
+    color: $tumblr;
+    background-color: $teal;
+  }
+}

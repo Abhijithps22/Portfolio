@@ -6,6 +6,12 @@
 
 .header-pro {
   transition: 400ms;
-  animation: color-changes 10s infinite;
+  animation: color-changes 10s ease;
+  cursor: pointer;
+}
+
+.badge {
+  transition: 300ms;
+  animation: badge-changes 5s linear;
   cursor: pointer;
 }

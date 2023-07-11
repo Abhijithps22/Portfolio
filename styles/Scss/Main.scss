@@ -10,6 +10,10 @@
 
 //components
 @import "./components/buttons";
-
+@import "./components/badges";
 // layouts
 @import "./layouts/header";
+@import "./layouts/backgrounditems";
+
+//pages
+@import "./pages/home";

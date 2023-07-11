@@ -14,6 +14,47 @@
     color: var.$vimeo;
   }
   100% {
+    color: var.$riverBed;
+  }
+}
+
+@keyframes badge-changes {
+  0% {
     color: var.$dribbble;
+  }
+
+  50% {
+    color: var.$twitter;
+  }
+}
+
+@keyframes code {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    color: $blue;
+  }
+}
+@keyframes heart {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    color: $dribbble;
+  }
+  100% {
+    transform: rotate(360deg);
+    color: $reddit;
+  }
+}
+@keyframes lap {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    color: $pink;
   }
 }
