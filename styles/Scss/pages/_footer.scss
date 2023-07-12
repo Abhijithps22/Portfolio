@@ -1,0 +1,34 @@
+@use "../abstract/variables" as var;
+
+.footer {
+  margin-top: 20px;
+  border: 0px solid black;
+  padding: 20px;
+  &-card-header {
+    font-size: 1.8em;
+    font-weight: 400;
+    font-family: $font-Zilla;
+    background-color: gray;
+    margin-bottom: 10px;
+  }
+  &-card-icons {
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  .fa-facebook {
+    color: $facebook;
+    margin: 3px;
+  }
+  .fa-instagram {
+    color: $instagram;
+    margin: 3px;
+  }
+  .fa-whatsapp {
+    color: $whatsapp;
+    margin: 3px;
+  }
+  .fa-linkedin {
+    color: $linkedin;
+    margin: 3px;
+  }
+}

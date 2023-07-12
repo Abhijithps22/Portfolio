@@ -1,0 +1,63 @@
+@use "../abstract/variables" as var;
+
+.skill {
+  background-color: white;
+  &-header > h2 {
+    font-family: $font-Merriweather;
+    color: black;
+    font-weight: bolder;
+    padding: 0.3em;
+  }
+  &-title > p {
+    color: gray;
+    font-weight: 400;
+    font-family: $font-Zilla;
+    font-size: 1.2em;
+
+    &:hover {
+      color: $dribbble;
+      cursor: pointer;
+    }
+  }
+  &-line {
+    font-family: $font-sen;
+    font-size: 1.5em;
+    font-weight: 600;
+    margin: auto;
+    width: 50%;
+    border-radius: 20px;
+    background-image: linear-gradient(to right, $cyan, $vimeo, $cyan);
+  }
+  &-code {
+    color: $tumblr;
+  }
+  &-items {
+    padding: 1em;
+  }
+  &-studies {
+    position: relative;
+    cursor: pointer;
+
+    &:hover::after {
+      border: 2.5px dotted $cyan;
+      animation: rotate-skills 5s linear infinite;
+    }
+    &::after {
+      position: absolute;
+      left: 8px;
+      top: 0px;
+      content: "";
+      width: 65%;
+      height: 100%;
+      border: 2px dotted $vimeo;
+      border-radius: 100%;
+    }
+  }
+  &-img {
+    position: relative;
+    width: 70%;
+    border-radius: 80%;
+    padding: 1em;
+    opacity: 1;
+  }
+}

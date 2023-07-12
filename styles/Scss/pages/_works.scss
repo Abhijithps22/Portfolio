@@ -1,0 +1,43 @@
+@use "../abstract/variables" as func;
+@use "../abstract/function" as var;
+
+.works {
+  background-color: $cyan;
+
+  &-header {
+    padding: 1em;
+    font-family: $font-Merriweather;
+    color: black;
+    font-weight: bolder;
+    text-align: center;
+    overflow: hidden;
+  }
+}
+
+.card {
+  &:hover {
+    transition: 1000ms;
+    transform: scale(0.9);
+    cursor: pointer;
+  }
+  &-title {
+    color: $linkedin;
+  }
+  &-body {
+    color: $tumblr;
+    &:hover {
+      color: $cyan;
+      background-color: $dribbble;
+    }
+  }
+  .btn {
+    background-color: $vimeo;
+    outline: none;
+    border: none;
+  }
+  .btn-primary {
+    @extend.btn;
+    color: white;
+    text-transform: capitalize;
+  }
+}

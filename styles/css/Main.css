@@ -7,10 +7,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Libre+Baskerville&family=Merriweather&family=PT+Serif&family=Poppins&family=Sen&family=Tilt+Prism&family=Zilla+Slab:ital,wght@0,400;1,300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Libre+Baskerville&family=Merriweather&family=PT+Serif&family=Poppins&family=Sen&family=Tilt+Prism&family=Zilla+Slab:ital,wght@0,400;1,300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Libre+Baskerville&family=Merriweather&family=PT+Serif&family=Poppins&family=Sen&family=Tilt+Prism&family=Zilla+Slab:ital,wght@0,400;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Libre+Baskerville&family=Merriweather&family=PT+Serif&family=Poppins&family=Sen&family=Tilt+Prism&family=Zilla+Slab:ital,wght@0,400;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Libre+Baskerville&family=Merriweather&family=PT+Serif&family=Poppins&family=Sen&family=Tilt+Prism&family=Zilla+Slab:ital,wght@0,400;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Libre+Baskerville&family=Merriweather&family=PT+Serif&family=Poppins&family=Sen&family=Tilt+Prism&family=Zilla+Slab:ital,wght@0,400;1,300&display=swap");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 a {
@@ -80,6 +87,15 @@ a {
   }
 }
 @keyframes lap {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    color: #e83e8c;
+  }
+}
+@keyframes rotate-skills {
   0% {
     transform: rotate(0deg);
   }
@@ -237,4 +253,134 @@ a {
 .about-title:hover {
   color: #ea4c89;
   cursor: pointer;
+}
+
+.skill {
+  background-color: white;
+}
+.skill-header > h2 {
+  font-family: "Merriweather", serif;
+  color: black;
+  font-weight: bolder;
+  padding: 0.3em;
+}
+.skill-title > p {
+  color: gray;
+  font-weight: 400;
+  font-family: "Zilla Slab", serif;
+  font-size: 1.2em;
+}
+.skill-title > p:hover {
+  color: #ea4c89;
+  cursor: pointer;
+}
+.skill-line {
+  font-family: "Sen", sans-serif;
+  font-size: 1.5em;
+  font-weight: 600;
+  margin: auto;
+  width: 50%;
+  border-radius: 20px;
+  background-image: linear-gradient(to right, #3065d0, #1ab7ea, #3065d0);
+}
+.skill-code {
+  color: #35465d;
+}
+.skill-items {
+  padding: 1em;
+}
+.skill-studies {
+  position: relative;
+  cursor: pointer;
+}
+.skill-studies:hover::after {
+  border: 2.5px dotted #3065d0;
+  animation: rotate-skills 5s linear infinite;
+}
+.skill-studies::after {
+  position: absolute;
+  left: 8px;
+  top: 0px;
+  content: "";
+  width: 65%;
+  height: 100%;
+  border: 2px dotted #1ab7ea;
+  border-radius: 100%;
+}
+.skill-img {
+  position: relative;
+  width: 70%;
+  border-radius: 80%;
+  padding: 1em;
+  opacity: 1;
+}
+
+.works {
+  background-color: #3065d0;
+}
+.works-header {
+  padding: 1em;
+  font-family: "Merriweather", serif;
+  color: black;
+  font-weight: bolder;
+  text-align: center;
+  overflow: hidden;
+}
+
+.card:hover {
+  transition: 1000ms;
+  transform: scale(0.9);
+  cursor: pointer;
+}
+.card-title {
+  color: #007bb6;
+}
+.card-body {
+  color: #35465d;
+}
+.card-body:hover {
+  color: #3065d0;
+  background-color: #ea4c89;
+}
+.card .btn, .card .btn-primary {
+  background-color: #1ab7ea;
+  outline: none;
+  border: none;
+}
+.card .btn-primary {
+  color: white;
+  text-transform: capitalize;
+}
+
+.footer {
+  margin-top: 20px;
+  border: 0px solid black;
+  padding: 20px;
+}
+.footer-card-header {
+  font-size: 1.8em;
+  font-weight: 400;
+  font-family: "Zilla Slab", serif;
+  background-color: gray;
+  margin-bottom: 10px;
+}
+.footer-card-icons {
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+.footer .fa-facebook {
+  color: #3b5998;
+  margin: 3px;
+}
+.footer .fa-instagram {
+  color: #c32aa3;
+  margin: 3px;
+}
+.footer .fa-whatsapp {
+  color: #25d366;
+  margin: 3px;
+}
+.footer .fa-linkedin {
+  color: #007bb6;
+  margin: 3px;
 }/*# sourceMappingURL=Main.css.map */

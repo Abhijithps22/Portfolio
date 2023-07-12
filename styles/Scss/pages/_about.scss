@@ -1,0 +1,32 @@
+@use "../abstract/variables" as var;
+@use "../abstract/function" as func;
+
+.about {
+  background-color: $cyan;
+
+  &-head {
+    padding: 3em 3em;
+  }
+  &-img {
+    border-radius: 10px;
+    border: 3px solid $cyan;
+  }
+  &-me {
+    color: $twitter;
+    font-family: $font-Poppins;
+    text-align: left;
+    font-size: 2em;
+  }
+  &-title {
+    color: black;
+    font-family: $font-Zilla;
+    font-weight: bold;
+    text-transform: capitalize;
+    word-spacing: wrap;
+    text-align: justify;
+  }
+  &-title:hover {
+    color: $dribbble;
+    cursor: pointer;
+  }
+}
